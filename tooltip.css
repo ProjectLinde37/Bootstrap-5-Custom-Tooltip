@@ -1,0 +1,152 @@
+/* ============================================================
+   Bootstrap 5.3 – Custom Tooltips
+   Gebruik:
+     data-bs-toggle="tooltip"
+     data-bs-custom-class="tooltip-info|success|warning|secondary|primary"
+   ============================================================ */
+
+/* ============================================================
+   ALGEMENE STIJL (geldt voor alle custom tooltips)
+   ============================================================ */
+
+.tooltip .tooltip-inner {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.25rem;
+}
+
+/* ============================================================
+   INFO
+   ============================================================ */
+
+.tooltip.tooltip-info {
+    --bs-tooltip-arrow-color: #0d6efd;
+}
+
+.tooltip.tooltip-info .tooltip-inner {
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+
+/* Arrow – alle placements */
+.tooltip.tooltip-info[data-popper-placement^="top"] .tooltip-arrow::before {
+    border-top-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-info[data-popper-placement^="bottom"] .tooltip-arrow::before {
+    border-bottom-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-info[data-popper-placement^="left"] .tooltip-arrow::before {
+    border-left-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-info[data-popper-placement^="right"] .tooltip-arrow::before {
+    border-right-color: var(--bs-tooltip-arrow-color) !important;
+}
+
+/* ============================================================
+   SUCCESS
+   ============================================================ */
+
+.tooltip.tooltip-success {
+    --bs-tooltip-arrow-color: #198754;
+}
+
+.tooltip.tooltip-success .tooltip-inner {
+    background-color: #198754;
+    color: #ffffff;
+}
+
+/* Arrow */
+.tooltip.tooltip-success[data-popper-placement^="top"] .tooltip-arrow::before {
+    border-top-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-success[data-popper-placement^="bottom"] .tooltip-arrow::before {
+    border-bottom-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-success[data-popper-placement^="left"] .tooltip-arrow::before {
+    border-left-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-success[data-popper-placement^="right"] .tooltip-arrow::before {
+    border-right-color: var(--bs-tooltip-arrow-color) !important;
+}
+
+/* ============================================================
+   WARNING
+   ============================================================ */
+
+.tooltip.tooltip-warning {
+    --bs-tooltip-arrow-color: #ffc107;
+}
+
+.tooltip.tooltip-warning .tooltip-inner {
+    background-color: #ffc107;
+    color: #000000;
+}
+
+/* Arrow */
+.tooltip.tooltip-warning[data-popper-placement^="top"] .tooltip-arrow::before {
+    border-top-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-warning[data-popper-placement^="bottom"] .tooltip-arrow::before {
+    border-bottom-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-warning[data-popper-placement^="left"] .tooltip-arrow::before {
+    border-left-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-warning[data-popper-placement^="right"] .tooltip-arrow::before {
+    border-right-color: var(--bs-tooltip-arrow-color) !important;
+}
+
+/* ============================================================
+   SECONDARY
+   ============================================================ */
+
+.tooltip.tooltip-secondary {
+    --bs-tooltip-arrow-color: #6c757d;
+}
+
+.tooltip.tooltip-secondary .tooltip-inner {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+/* Arrow */
+.tooltip.tooltip-secondary[data-popper-placement^="top"] .tooltip-arrow::before {
+    border-top-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-secondary[data-popper-placement^="bottom"] .tooltip-arrow::before {
+    border-bottom-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-secondary[data-popper-placement^="left"] .tooltip-arrow::before {
+    border-left-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-secondary[data-popper-placement^="right"] .tooltip-arrow::before {
+    border-right-color: var(--bs-tooltip-arrow-color) !important;
+}
+
+/* ============================================================
+   PRIMARY
+   ============================================================ */
+
+.tooltip.tooltip-primary {
+    --bs-tooltip-arrow-color: #0d6efd;
+}
+
+.tooltip.tooltip-primary .tooltip-inner {
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+
+/* Arrow */
+.tooltip.tooltip-primary[data-popper-placement^="top"] .tooltip-arrow::before {
+    border-top-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-primary[data-popper-placement^="bottom"] .tooltip-arrow::before {
+    border-bottom-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-primary[data-popper-placement^="left"] .tooltip-arrow::before {
+    border-left-color: var(--bs-tooltip-arrow-color) !important;
+}
+.tooltip.tooltip-primary[data-popper-placement^="right"] .tooltip-arrow::before {
+    border-right-color: var(--bs-tooltip-arrow-color) !important;
+}
