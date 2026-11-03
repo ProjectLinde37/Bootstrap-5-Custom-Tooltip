@@ -1,5 +1,7 @@
 # Goosse Tooltip Module
 
+**Version 1.0** — see [CHANGELOG.md](CHANGELOG.md)
+
 Reusable JavaScript & CSS module for **styled Bootstrap 5.3 tooltips**
 with **correctly coloured arrows**.
 
@@ -61,11 +63,9 @@ This guarantees **predictable arrow colouring**.
 
 Create one CSS file, for example:
 
+```text
+public/goosse/tooltip/tooltip.css
 ```
-
-public/npz\_admin/css/goosse-tooltips.css
-
-````
 
 ✅ Load this file **after Bootstrap CSS**.
 
@@ -103,10 +103,7 @@ function initGoosseTooltips(root = document) {
 
 Call `initGoosseTooltips()` after dynamic DOM updates.
 
-***
-
-Perfect — below is **only that section rewritten**, fully filled in, clean, and ready to drop into your README.\
-No extra text, no omissions.
+The module version is readable via `window.goosseTooltip.version`.
 
 ***
 
@@ -228,7 +225,12 @@ To add a new colour:
 
 Example:
 
-
+```css
+.tooltip-warning .tooltip-inner {
+    background-color: var(--bs-warning);
+    color: #000;
+}
+```
 
 ***
 
