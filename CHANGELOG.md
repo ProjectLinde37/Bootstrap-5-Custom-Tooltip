@@ -2,6 +2,12 @@
 
 All notable changes to Goosse Tooltip are documented here.
 
+## [1.1] – 2026-11-03
+
+### Added
+
+- **`initGoosseTooltips(root)`** — initializes tooltips in a given DOM subtree, skips already-initialized elements; exposed as `goosseTooltip.init()` for AJAX/dynamic content (the function the README already described)
+
 ## [1.0] – 2026-11-03
 
 ### Added

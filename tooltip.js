@@ -1,7 +1,15 @@
-window.goosseTooltip = { version: '1.0' };
+function initGoosseTooltips(root = document) {
+    root
+        .querySelectorAll('[data-bs-toggle="tooltip"]')
+        .forEach(el => {
+            if (!el._goosseTooltip) {
+                el._goosseTooltip = new bootstrap.Tooltip(el);
+            }
+        });
+}
+
+window.goosseTooltip = { version: '1.1', init: initGoosseTooltips };
 
 document.addEventListener('DOMContentLoaded', () => {
-    document
-        .querySelectorAll('[data-bs-toggle="tooltip"]')
-        .forEach(el => new bootstrap.Tooltip(el));
+    initGoosseTooltips();
 });

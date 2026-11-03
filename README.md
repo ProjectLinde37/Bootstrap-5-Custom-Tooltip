@@ -1,6 +1,6 @@
 # Goosse Tooltip Module
 
-**Version 1.0** — see [CHANGELOG.md](CHANGELOG.md)
+**Version 1.1** — see [CHANGELOG.md](CHANGELOG.md)
 
 Reusable JavaScript & CSS module for **styled Bootstrap 5.3 tooltips**
 with **correctly coloured arrows**.
